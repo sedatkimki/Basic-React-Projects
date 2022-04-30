@@ -1,0 +1,70 @@
+.App{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: var(--font-color);
+  background-color: var(--background-color);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.4s, color 0.4s;
+}
+
+.App.dark{
+  color: var(--font-color-dark);
+  background-color: var(--background-color-dark);
+  
+}
+.content-wrapper {
+  width: 1100px;
+}
+.city-name{
+  align-self: flex-start;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-wrapper {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header {
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid  var(--card-color); /* Light grey */
+  border-top: 16px solid  var(--font-color); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s ease-in-out infinite;
+}
+
+.loader.dark {
+  border: 16px solid  var(--card-color-dark); /* Light grey */
+  border-top:16px solid   var(--font-color-dark); /* Blue */
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
