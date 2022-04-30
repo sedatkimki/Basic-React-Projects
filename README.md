@@ -2,4 +2,4 @@
 
 
 ## Simple Weather App
-for demo : https://basic-react-projects-sedatkimki.vercel.app/
+for demo : https://simple-weather-app-react.vercel.app/
